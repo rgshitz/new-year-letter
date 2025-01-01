@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Loved by the King", serif;
+  transition: 2s;
 }
 
 body {
@@ -14,7 +15,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fcc8d1;
+  /* background: #fcc8d1; */
+  background: hsla(350, 86%, 97%, 1);
+
+  background: radial-gradient(
+    circle,
+    hsla(350, 86%, 97%, 1) 0%,
+    hsla(350, 90%, 89%, 1) 80%
+  );
+
+  background: -moz-radial-gradient(
+    circle,
+    hsla(350, 86%, 97%, 1) 0%,
+    hsla(350, 90%, 89%, 1) 80%
+  );
+
+  background: -webkit-radial-gradient(
+    circle,
+    hsla(350, 86%, 97%, 1) 0%,
+    hsla(350, 90%, 89%, 1) 80%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEF2F4", endColorstr="#FCC8D1", GradientType=1 );
 }
 
 .loader {
@@ -121,4 +143,28 @@ body {
   100% {
     transform: translate(-50%, -50%) rotate(45deg) scale(1);
   }
+}
+
+.prompt {
+  text-align: center;
+  padding: 7px;
+  margin: 17px;
+  font-family: "Times New Roman", Times, serif;
+  /* text-transform: uppercase; */
+  font-weight: bolder;
+  font-style: italic;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 93, 0.219);
+}
+
+.paper {
+  margin: 0 2rem;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-top: dashed 12px #fcc8d1;
+  border-bottom: dashed 12px #fcc8d1;
+}
+
+img {
+  width: 152px;
 }
