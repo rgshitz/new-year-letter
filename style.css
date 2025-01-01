@@ -170,3 +170,14 @@ body {
 img {
   width: 152px;
 }
+
+.aud {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+audio {
+  padding-bottom: 15px;
+}
